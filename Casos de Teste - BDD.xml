@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10005</projectId>
+    <projectKey>SLT</projectKey>
+    <exportDate>2025-02-07 17:46:35 UTC</exportDate>
+    <folders>
+        <folder fullPath="BDD" index="0"/>
+    </folders>
+    <testCases>
+        <testCase id="225508277" key="SLT-T3">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Thalita Augustineli Pereira</createdBy>
+            <createdOn>2025-02-07 17:36:56 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[BDD]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[Caso de Teste CT03: Login com Facebook]]></name>
+            <objective><![CDATA[Verificar se o usu&aacute;rio consegue fazer login com sucesso usando a op&ccedil;&atilde;o de login via Facebook.]]></objective>
+            <owner>712020:0c769fec-ff8c-47b9-ae54-b80545e9d9b9</owner>
+            <precondition><![CDATA[<ul><li id="isPasted">O usu&aacute;rio deve possuir uma conta v&aacute;lida no Facebook.</li><li>A integra&ccedil;&atilde;o com a API de autentica&ccedil;&atilde;o do Facebook deve estar configurada e funcionando.</li></ul>]]></precondition>
+            <priority><![CDATA[High]]></priority>
+            <status><![CDATA[Deprecated]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Feature Login via redes sociais
+
+  Scenario Usuário faz login com sucesso usando a opção Facebook
+    Given que o usuário está na página inicial da loja virtual
+    And o usuário clica na opção "Entrar"
+    And o usuário vê as opções de login via redes sociais
+    When o usuário seleciona a opção de login via Facebook
+    And o usuário insere suas credenciais do Facebook
+    And o usuário autentica-se no Facebook
+      #Comente: Então o usuário deve ser redirecionado para a loja virtual
+    And o usuário deve estar autenticado
+    And  o usuário deve ser redirecionado para a página inicial com a sessão iniciada]]></details>
+            </testScript>
+        </testCase>
+        <testCase id="225510744" key="SLT-T4">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Thalita Augustineli Pereira</createdBy>
+            <createdOn>2025-02-07 17:44:57 UTC</createdOn>
+            <customFields/>
+            <folder><![CDATA[BDD]]></folder>
+            <issues/>
+            <labels/>
+            <name><![CDATA[CT04: Login com Credenciais Incorretas]]></name>
+            <objective><![CDATA[Verificar se o sistema exibe uma mensagem de erro apropriada quando o usu&aacute;rio tenta fazer login com credenciais incorretas.]]></objective>
+            <owner>712020:0c769fec-ff8c-47b9-ae54-b80545e9d9b9</owner>
+            <precondition><![CDATA[<ul><li id="isPasted">O usu&aacute;rio deve estar na p&aacute;gina de login da loja virtual.</li><li>A integra&ccedil;&atilde;o com as APIs de autentica&ccedil;&atilde;o das redes sociais (Apple, Google, Facebook) deve estar configurada e funcionando.</li></ul>]]></precondition>
+            <priority><![CDATA[High]]></priority>
+            <status><![CDATA[Approved]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="bdd">
+                <details><![CDATA[Feature Login via redes sociais
+
+  Scenario Usuário tenta fazer login com credenciais incorretas
+    Given que o usuário está na página inicial da loja virtual
+    And o usuário clica na opção "Entrar"
+    And o usuário vê as opções de login via redes sociais
+    When o usuário seleciona uma das opções de login via redes sociais (Apple, Google Gmail, Facebook)
+    And o usuário insere credenciais incorretas na página de login da rede social selecionada
+    #Coment: Então o sistema deve exibir uma mensagem de erro informando que as credenciais estão incorretas
+    And o login não deve ser efetuado]]></details>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>

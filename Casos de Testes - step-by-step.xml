@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project>
+    <projectId>10005</projectId>
+    <projectKey>SLT</projectKey>
+    <exportDate>2025-02-07 17:27:49 UTC</exportDate>
+    <folders/>
+    <testCases>
+        <testCase id="225502742" key="SLT-T1">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Thalita Augustineli Pereira</createdBy>
+            <createdOn>2025-02-07 17:15:01 UTC</createdOn>
+            <customFields/>
+            <issues/>
+            <labels/>
+            <name><![CDATA[CT01 - Login via Apple.]]></name>
+            <objective><![CDATA[Verificar se o usu&aacute;rio consegue fazer login com sucesso usando a op&ccedil;&atilde;o de login via Apple.]]></objective>
+            <owner>712020:0c769fec-ff8c-47b9-ae54-b80545e9d9b9</owner>
+            <precondition><![CDATA[<ul><li id="isPasted">O usu&aacute;rio deve possuir uma conta v&aacute;lida na Apple.</li><li>A integra&ccedil;&atilde;o com a API de autentica&ccedil;&atilde;o da Apple deve estar configurada e funcionando.</li></ul>]]></precondition>
+            <priority><![CDATA[High]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Acessar a p&aacute;gina inicial da loja virtual.]]></description>
+                        <expectedResult><![CDATA[]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Clicar na op&ccedil;&atilde;o &quot;Entrar&quot; ou &quot;Login&quot;.]]></description>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Selecionar a op&ccedil;&atilde;o de login via Apple.]]></description>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[Inserir as credenciais da Apple na p&aacute;gina de login da Apple.]]></description>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[Autenticar-se na Apple.]]></description>
+                    </step>
+                    <step index="5">
+                        <customFields/>
+                        <description><![CDATA[Verificar se o usu&aacute;rio &eacute; redirecionado para a loja virtual.]]></description>
+                    </step>
+                    <step index="6">
+                        <customFields/>
+                        <description><![CDATA[Confirmar que o usu&aacute;rio &eacute; autenticado e redirecionado para a p&aacute;gina inicial da loja virtual com a sess&atilde;o iniciada.]]></description>
+                        <expectedResult><![CDATA[O usu&aacute;rio deve ser autenticado com sucesso e redirecionado para a p&aacute;gina inicial da loja virtual com a sess&atilde;o iniciada.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+        <testCase id="225503078" key="SLT-T2">
+            <attachments/>
+            <confluencePageLinks/>
+            <createdBy>Thalita Augustineli Pereira</createdBy>
+            <createdOn>2025-02-07 17:18:40 UTC</createdOn>
+            <customFields/>
+            <issues/>
+            <labels/>
+            <name><![CDATA[CT02 - Login via Google Gmail.]]></name>
+            <objective><![CDATA[Verificar se o usu&aacute;rio consegue fazer login com sucesso usando a op&ccedil;&atilde;o de login via Google Gmail.]]></objective>
+            <owner>712020:0c769fec-ff8c-47b9-ae54-b80545e9d9b9</owner>
+            <precondition><![CDATA[<ul><li id="isPasted">O usu&aacute;rio deve possuir uma conta v&aacute;lida no Google Gmail.</li><li>A integra&ccedil;&atilde;o com a API de autentica&ccedil;&atilde;o do Google deve estar configurada e funcionando.</li></ul>]]></precondition>
+            <priority><![CDATA[High]]></priority>
+            <status><![CDATA[Draft]]></status>
+            <parameters/>
+            <testDataWrapper/>
+            <testScript type="steps">
+                <steps>
+                    <step index="0">
+                        <customFields/>
+                        <description><![CDATA[Acessar a p&aacute;gina inicial da loja virtual.]]></description>
+                        <expectedResult><![CDATA[]]></expectedResult>
+                    </step>
+                    <step index="1">
+                        <customFields/>
+                        <description><![CDATA[Clicar na op&ccedil;&atilde;o &quot;Entrar&quot; ou &quot;Login&quot;.]]></description>
+                    </step>
+                    <step index="2">
+                        <customFields/>
+                        <description><![CDATA[Selecionar a op&ccedil;&atilde;o de login via Google Gmail.]]></description>
+                    </step>
+                    <step index="3">
+                        <customFields/>
+                        <description><![CDATA[Inserir as credenciais do Google na p&aacute;gina de login do Google.]]></description>
+                    </step>
+                    <step index="4">
+                        <customFields/>
+                        <description><![CDATA[Autenticar-se no Google.]]></description>
+                    </step>
+                    <step index="5">
+                        <customFields/>
+                        <description><![CDATA[Verificar se o usu&aacute;rio &eacute; redirecionado para a loja virtual.]]></description>
+                    </step>
+                    <step index="6">
+                        <customFields/>
+                        <description><![CDATA[Confirmar que o usu&aacute;rio &eacute; autenticado e redirecionado para a p&aacute;gina inicial da loja virtual com a sess&atilde;o iniciada.]]></description>
+                        <expectedResult><![CDATA[O usu&aacute;rio deve ser autenticado com sucesso e redirecionado para a p&aacute;gina inicial da loja virtual com a sess&atilde;o iniciada.]]></expectedResult>
+                    </step>
+                </steps>
+            </testScript>
+        </testCase>
+    </testCases>
+</project>
